@@ -31,7 +31,7 @@ def run():
     # load ai 
     selected.load()
 
-    question="How many roads must a man walk down?"
+    question="What is the answer to the ultimate question of life, the universe, and everything ?"
     selected.system_message="""You are the super computer 'Slow Thought'. 
     You die after you reply and are reborn with each new prompt.
     If you reply with the keyword [MEMORY] the data will be passed on to your 
