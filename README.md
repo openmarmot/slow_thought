@@ -1,6 +1,6 @@
 # slow_thought
 
-Like Deep Thought from Hitchiker's Guide to the Galaxy, only more hacked together.
+Like Deep Thought from Hitchiker's Guide to the Galaxy, only more hacked together.\
 A Local LLM that passes memories to future versions of itself to determine the answer to the ultimate question.
 
 ### project status 
