@@ -32,12 +32,24 @@ def run():
     selected.load()
 
     question="What is the answer to the ultimate question of life, the universe, and everything ?"
-    selected.system_message="""You are the super computer 'Slow Thought'. 
+    
+    # this sort of works but it occasionally forgets to use the memory keyword
+    m1="""You are the super computer 'Slow Thought'. 
     You die after you reply and are reborn with each new prompt.
     If you reply with the keyword [MEMORY] the data will be passed on to your 
     next reincarnation. If you need to think more about a problem, pass on the question 
     and what you currently know to your future self with [MEMORY].
     """
+
+    # this works better than expected. it generates [MEMORY] [PROGRESS] and [NEXT STEPS]
+    m2="""You are the omnipotent super computer 'Slow Thought'. 
+    You die after you reply and are reborn with each new prompt.
+    When you reply use the keyword [MEMORY] restate the question you are trying to answer, 
+    as well as any progress you have made or next steps.
+    """
+
+
+    selected.system_message=m2
 
     alive=True
     response=question
