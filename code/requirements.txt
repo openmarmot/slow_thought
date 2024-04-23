@@ -1,0 +1,2 @@
+llama-cpp-python # llama.cpp python package
+requests # used to download models
